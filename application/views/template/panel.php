@@ -30,15 +30,11 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a href="<?php echo base_url();?>pesan" >
                           <i class="fa fa-envelope"></i>
                           <span>Pesan</span>
                       </a>
-                      <ul class="sub">
-                          <li><a  href="<?php echo base_url();?>pesan">Kirim Pesan</a></li>
-                          <li><a  href="<?php echo base_url();?>page/">Kotak Masuk</a></li>
-                          <li><a  href="<?php echo base_url();?>page/">Kotak Keluar</a></li>
-                      </ul>
+                      
                   </li>
                   
               </ul>
