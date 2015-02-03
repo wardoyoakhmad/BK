@@ -20,6 +20,28 @@
 
 @media (max-width: 768px) {
 
+#inputTahun{
+    width:91%;
+}
+
+#inputBulan{
+    width:91%;
+}
+
+#selectKetentuan{
+    width:91%;
+}
+
+#selectKelas{
+    width:91%;
+}
+
+#crumbData{
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
     .header {
         position: absolute;
     }
