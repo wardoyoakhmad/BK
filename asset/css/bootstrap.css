@@ -5,6 +5,7 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
 #crumbData{
   width: 23%;
   background-color: #ffffff;
@@ -5381,6 +5382,7 @@ button.close {
   background: transparent;
   border: 0;
 }
+
 .modal-open {
   overflow: hidden;
 }
@@ -5390,7 +5392,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1040;
   display: none;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -5400,14 +5402,16 @@ button.close {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
           transition:         transform .3s ease-out;
-  -webkit-transform: translate3d(0, -25%, 0);
-       -o-transform: translate3d(0, -25%, 0);
-          transform: translate3d(0, -25%, 0);
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -5431,12 +5435,10 @@ button.close {
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 1040;
   background-color: #000;
 }
 .modal-backdrop.fade {
