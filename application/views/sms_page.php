@@ -30,7 +30,7 @@
               <div class="col-lg-12">
                 <div class="content-panel">
 
-    <div class="row">
+    <div class="row pesan">
         
         <div class="col-sm-9 col-md-10 col-lg-12">
             <!-- Nav tabs -->
