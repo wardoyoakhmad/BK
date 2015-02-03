@@ -203,6 +203,10 @@ hr {
 	margin-top: 25px;
 }
 
+.pesan {
+    margin-top: -15px;
+}
+
 .ms {
     margin-top: 10px;
     margin-bottom: 25px;
@@ -1001,6 +1005,7 @@ PANELS CONFIGURATIONS
 	padding-top: 15px;
 	padding-bottom: 0px;
 }
+
 .content-panel h4 {
 	margin-left: 10px;
 }
@@ -1773,7 +1778,7 @@ label {
 
 
 
-/*LOGIN CONFIGURATION PAGE*/
+/* CSS untuk form login */
 .form-login {
 	max-width: 330px;
 	margin: 100px auto 0;
@@ -1786,7 +1791,7 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #68dff0;
+	background: #656D78;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	color: #fff;
@@ -1794,6 +1799,19 @@ label {
 	text-transform: uppercase;
 	font-weight: 300;
 }
+
+.form-login p.form-login-footer{
+    margin: 0;
+    padding: 25px 20px;
+    text-align: center;
+    background: #656D78;
+    border-radius:  0 0 5px 5px;
+    -webkit-border-radius:  0 0 5px 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+}
+
 .login-wrap {
 	padding: 20px;
 }
