@@ -1784,6 +1784,7 @@ label {
 	margin: 100px auto 0;
 	background: #fff;
 	border-radius: 5px;
+    border: solid 1px #37BC9B;
 	-webkit-border-radius: 5px;
 }
 
@@ -1791,7 +1792,7 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #656D78;
+	background:#37BC9B;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	color: #fff;
@@ -1804,7 +1805,7 @@ label {
     margin: 0;
     padding: 25px 20px;
     text-align: center;
-    background: #656D78;
+    background: #37BC9B;
     border-radius:  0 0 5px 5px;
     -webkit-border-radius:  0 0 5px 5px;
     color: #fff;
