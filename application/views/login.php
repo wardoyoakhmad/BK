@@ -28,12 +28,13 @@
         
               <form class="form-login" method="post" action="<?php echo base_url(); ?>login/masuk" role="login">
                 <h2 class="form-login-heading">Login</h2>
+                <br>
                 <div class="login-wrap">
                     <input type="text" name="email" class="form-control" placeholder="Username" required class="form-control input-lg" autofocus>
                     <br>
                     <input type="password" name="pass" class="form-control" placeholder="Password" required class="form-control input-lg">
                     <br>
-                    <button class="btn btn-default btn-block" type="submit"><i class="fa fa-lock"></i> Login</button>
+                    <button class="btn btn-success btn-block" type="submit"><i class="fa fa-lock"></i> Login</button>
                     <br>
                    
                     <span class="pull-right">
@@ -53,6 +54,7 @@
                                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                   <h4 class="modal-title">Lupa Password ?</h4>
                               </div>
+                              <br>
                               <div class="modal-body">
                                   <p>Masukkan alamat email untuk me-reset password</p>
                                   <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
@@ -60,7 +62,7 @@
                               </div>
                               <div class="modal-footer">
                                   <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                                  <button class="btn btn-info" type="button">Submit</button>
+                                  <button class="btn btn-success" type="button">Submit</button>
                               </div>
                           </div>
                       </div>
