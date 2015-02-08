@@ -2,7 +2,7 @@
       <footer class="site-footer">
           <div class="text-center">
               copyright <i class="fa fa-copyright"></i> 2015. blackomsi
-              <a href="index.html#" class="go-top">
+              <a href="#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -31,6 +31,13 @@
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.paginate.js';?>"></script>
 	<script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.filter.js';?>"></script>
+
+    <script type="text/javascript">
+      $('.sub-menu').click(function(){
+      // toggle icon
+      $(this).find("#panah").toggleClass("fa fa-chevron-right fa fa-chevron-down");
+});
+    </script>
 
     <script type="text/javascript">
     $(function () {
