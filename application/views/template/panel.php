@@ -20,7 +20,7 @@
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-list"></i>
-                          <span>Data</span>
+                          <span>Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right pull-right" id="panah"></i></span>
                       </a>
                       <ul class="sub">
                           <li><a  href="<?php echo base_url();?>page/data">Data Siswa</a></li>
