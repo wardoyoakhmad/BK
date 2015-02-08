@@ -3,7 +3,7 @@
 		<div class="row mt">
 			<div class="col-lg-12">
 				
-					<h4 class="mb"><i class="fa fa-angle-right"></i> Apa itu Sistem Monitoring Siswa ?</h4>
+					<h4 class="mb"><i class="fa fa-check-square"></i> Apa itu Sistem Monitoring Siswa ?</h4>
 
 					<div class="list-group">
   					<a class="list-group-item">
@@ -15,7 +15,7 @@
   					</a>
   					</div>    
           
-					<h4 class="mb"><i class="fa fa-angle-right"></i> Apa keuntungannya ?</h4>
+					<h4 class="mb"><i class="fa fa-check-square"></i> Apa keuntungannya ?</h4>
 
 					<div class="list-group">
   					<a class="list-group-item">
@@ -24,8 +24,8 @@
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-shield fa-stack-1x"></i>
             </span>&nbsp; &nbsp;
-    				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          
+    				Aman, penyampaian pesan dari pihak sekolah kepada wali murid disampaikan langsung melalui SMS sehingga aman dari kecurangan. 
+           
   					</a>
 
   					<a class="list-group-item">
@@ -34,7 +34,7 @@
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-thumbs-up fa-stack-1x"></i>
             </span>&nbsp; &nbsp;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   
+            Efisien, pesan dari pihak sekolah disampaikan dengan cepat dan tanpa proses yang berbelit-belit.   
 
   					</a>
 
@@ -44,7 +44,7 @@
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-comments-o fa-stack-1x"></i>
             </span>&nbsp; &nbsp;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Komunikatif, komunikasi antara pihak sekolah selaku pembimbing dengan wali murid dapat terjalin dengan baik.
 
   					</a>
 
@@ -54,7 +54,7 @@
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-users fa-stack-1x"></i>
             </span>&nbsp; &nbsp;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   
+            Monitoring, mengawasi prilaku siswa yang dipercayakan pihak wali murid kepada pihak sekolah agar siswa dapat disiplin   
 
   					</a>
 					</div>
