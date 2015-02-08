@@ -203,8 +203,13 @@ hr {
 	margin-top: 25px;
 }
 
+.data {
+    min-height: 450px;
+}
+
 .pesan {
     margin-top: -15px;
+    min-height: 450px;
 }
 
 .ms {
@@ -2088,6 +2093,7 @@ label {
     background: #37BC9B;
     color: #ffffff;
     padding: 10px 0;
+    margin-top: 10px;
 }
 
 
