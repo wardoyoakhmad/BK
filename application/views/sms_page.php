@@ -2,7 +2,7 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-            <h3><i class="fa fa-inbox"></i> Kotak Masuk</h3>
+            <h3><i class="fa fa-inbox"></i> Pesan</h3>
             
            <?php
               if(isset($breadcrumb)&& is_array($breadcrumb) && count($breadcrumb) > 0){
@@ -49,19 +49,13 @@
                     
 
 
-                    <form class="form-horizontal" method="get">
+                    <form class="form-horizontal" method="get" id="formPesan">
                     
 
                       <div class="form-group">
                       <label for="select" class="col-md-1 control-label">No. HP</label>
-                          <div class="col-md-3">
-                          <select class="form-control" id="select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
+                          <div class="col-sm-2 col-md-3 col-lg-3">
+                          <input type="text" class="form-control" name="nomerHp">
                           </div>
                       </div>
 
@@ -69,7 +63,7 @@
                             <label for="textArea" class="col-md-1 control-label">Pesan</label>
                             <div class="col-lg-6">
                               
-                              <textarea class="form-control" rows="3" id="textArea"></textarea>
+                              <textarea class="form-control" rows="3" id="textArea" name="textPesan"></textarea>
                               <span class="help-block">Tuliskan pesan pada kolom di atas ini.</span>
                             </div>
                       </div>
