@@ -13,6 +13,7 @@
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="<?= base_url().'asset/js/jquery.js';?>"></script>
     <script src="<?= base_url().'asset/js/jquery-1.11.2.min.js';?>"></script>
+    <script src="<?= base_url().'asset/js/jqueryvalidate.js';?>"></script>
     <script src="<?= base_url().'asset/js/bootstrap.min.js';?>"></script>
     <script src="<?= base_url().'asset/js/typeahead.js';?>"></script>
     <script class="include" type="text/javascript" src="<?= base_url().'asset/js/jquery.dcjqaccordion.2.7.js';?>"></script>
@@ -32,11 +33,20 @@
 	<script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.filter.js';?>"></script>
 
+    <!-- Ini JS buat toggle menu -->
+    <script type="text/javascript">
+      $('.sidebar-toggle-box').click(function(){
+      // toggle icon
+      $(this).find("#SlideBar").toggleClass("fa fa-bars fa fa-arrow-right fa-3x");
+    });
+    </script>
+
+    <!-- Ini JS buat hide icon menu -->
     <script type="text/javascript">
       $('.sub-menu').click(function(){
       // toggle icon
       $(this).find("#panah").toggleClass("fa fa-chevron-right fa fa-chevron-down");
-});
+    });
     </script>
 
     <script type="text/javascript">
@@ -91,7 +101,7 @@
     
 });
  
-    </script>  
+    </script>
 
   </body>
 </html>
