@@ -19,6 +19,7 @@
             <li class="active"><?php echo $key; ?></li>
             <?php }
           }
+
           ?>     
         </ul>
 
@@ -26,11 +27,19 @@
         <?php
       }
       ?>
+
+      <?php if (isset($data_error)) {
+        print_r($error); 
+      } ?>
       <div class="row mt">
         <div class="col-lg-12">
           <div class="content-panel">
             <a href="<?php echo base_url(); ?>dokumen/download"><button class="btn btn-lg btn-block btn-info">Download</button></a><br/>
-            <a href="<?php echo base_url(); ?>dokumen/import_csv"><button class="btn btn-lg btn-block btn-info">Improt CSV</button></a>
+            <form method="post" action="<?php echo base_url(); ?>dokumen/import_csv" enctype="multipart/form-data">
+              <!-- <button class="btn btn-lg btn-block btn-info">Improt CSV</button> -->
+              <input type="file" name="userfile" size="36" id="usrFile">
+              <input type="submit" id="btnUpload" class="btn btn-success btn-lg btn-block" value="Upload & Export">
+            </form>
           </div>
         </div>
       </div>
