@@ -14,23 +14,22 @@ class Dokumen extends CI_Controller {
 	{
 		$this->load->library('csvimport');
 		$this->load->model('dokumen_model');
-		$data['error'] = '';
-
-		$config['upload_path'] = './upload/';
+		$config['upload_path'] = './upload_data_siswa_csv/';
         $config['allowed_types'] = 'csv';
         $config['max_size'] = '100000';
-		$this->load->library('upload', $config);
+
+        $this->load->library('upload', $config);
 
 		if (!$this->upload->do_upload()) {
-			$data['error'] = $this->upload->display_errors();
-			$this->load->view('import', $data);
+			$data_error['error'] = $this->upload->display_errors();
+			$this->load->view('import', $data_error);
 		}
 		else{
 			$file_data = $this->upload->data();
-			$file_path = './upload/'.$file_data['file_name'];
+			$file_path = './upload_data_siswa_csv/'.$file_data['file_name'];
 			if ($this->csvimport->get_array($file_path)) {
 				$csv_array = $this->csvimport->get_array($file_path);
-				foreach ($$csv_array as $row) {
+				foreach ($csv_array as $row) {
 					if (isset($row['nis'])) {
 						$insert_data = array(
 							'nis'=> $row['nis'],

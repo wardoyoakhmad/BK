@@ -10,8 +10,22 @@
 			# code...
 		}
 
+		function tampilSiswa(){
+			$sql = 'SELECT nis, nama FROM siswa where nis not in(SELECT nis from kelas_siswa)';
+			$data = $this->db->query($sql);
+			$index = 1;
+			foreach ($data->result() as $dataSiswa) {
+				$kirimData[$index] = array(
+					'nis' => $dataSiswa->nis,
+					'nama' => $dataSiswa->nama
+					);
+				$index++;
+			}
+			return $kirimData;
+		}
+
 		function tampil(){
-			$sql = 'SELECT nis, nama, nama_kelas, no_hp_wali FROM siswa join kelas_siswa using(id_siswa) join kelas using (id_kelas)';
+			$sql = 'SELECT nis, nama, nama_kelas, no_hp_wali FROM siswa join kelas_siswa using(nis) join kelas using (id_kelas)';
 			$data = $this->db->query($sql);
 			$index = 1;
 			foreach ($data->result() as $dataSiswa) {
@@ -21,9 +35,16 @@
 					'kelas' => $dataSiswa->nama_kelas,
 					'no_hp' => $dataSiswa->no_hp_wali
 					);
-				$index+=1;
+				$index++;
 			}
 			return $kirimData;
+		}
+
+		function input_kelas($kelas,$nis,$tahun)
+		{
+			$sql = "INSERT INTO kelas_siswa(nis,id_kelas,id_tahun_ajaran) VALUES ('$nis','$kelas','$tahun')";
+			// print_r($sql);
+			$this->db->query($sql);
 		}
 	}
 	?>

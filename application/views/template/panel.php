@@ -23,6 +23,7 @@
                           <span>Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right pull-right" id="panah"></i></span>
                       </a>
                       <ul class="sub">
+                          <li><a  href="<?php echo base_url();?>page/import">Import Data Siswa Baru</a></li>
                           <li><a  href="<?php echo base_url();?>page/data">Data Siswa</a></li>
                           <li><a  href="<?php echo base_url();?>page/rekap">Rekap Data</a></li>
                           <li><a  href="<?php echo base_url();?>page/edit">Edit Data</a></li>
@@ -30,11 +31,15 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a href="<?php echo base_url();?>pesan" >
+                      <a href="javascript:;" >
                           <i class="fa fa-envelope"></i>
                           <span>Pesan</span>
                       </a>
-                      
+                      <ul class="sub">
+                          <li><a  href="<?php echo base_url();?>pesan">Kirim Pesan</a></li>
+                          <li><a  href="<?php echo base_url();?>page/">Kotak Masuk</a></li>
+                          <li><a  href="<?php echo base_url();?>page/">Kotak Keluar</a></li>
+                      </ul>
                   </li>
                   
               </ul>
