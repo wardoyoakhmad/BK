@@ -95,96 +95,12 @@
                               </thead>
                               <tbody>
                               <tr>
-                                  <td>1</td>
-                                  <td>Lorem Ipsum dolor</td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-info label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    2
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>17900.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    3
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>14400.00$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    4
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>22000.50$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>5</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>6</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>7</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>8</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                  <td id="colIsi">1</td>
+                                  <td id="colIsi">Lorem Ipsum dolor</td>
+                                  <td id="colIsi">12000.00$ </td>
+                                  <td id="colIsi"><span class="label label-info label-mini">Due</span></td>
+                                  <td id="colIsi">
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-reply"></i></button>
                                       <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
                                   </td>
                               </tr>
@@ -215,105 +131,13 @@
                               </thead>
                               <tbody>
                               <tr>
-                                  <td>1</td>
-                                  <td>Lorem Ipsum dolor</td>
-                                  <td>12000.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-info label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    2
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>17900.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    3
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>14400.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    4
-                                  </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>22000.50$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-success label-mini">Paid</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>5</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                      
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>6</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>7</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>8</td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                  <td>12120.00$ </td>
-                                  <td>12000.00$ </td>
-                                  <td><span class="label label-warning label-mini">Due</span></td>
-                                  <td>
-                                     
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  <td id="colIsi">1</td>
+                                  <td id="colIsi">Lorem Ipsum dolor</td>
+                                  <td id="colIsi">12000.00$ </td>
+                                  <td id="colIsi">12000.00$ </td>
+                                  <td id="colIsi"><span class="label label-info label-mini">Due</span></td>
+                                  <td id="colIsi">
+                                      <button class="btn btn-danger btn-xs tooltips" data-placement="right" data-original-title="Hapus" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-trash-o "></i></button>
                                   </td>
                               </tr>
                               </tbody>
@@ -342,6 +166,28 @@
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->
             </div><!-- /row -->   
+
+<!-- Modal Delete -->
+<div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Delete Data</h4>
+      </div>
+      <br>
+      <div class="modal-body">
+        <form>
+          <p>Hapus Data ?</p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-success">Ya</button>
+      </div>
+    </div>
+  </div>
+</div>
             
     </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->

@@ -45,7 +45,7 @@ a, a:hover, a:focus {
 
 /* Bootstrap Modifications */
 .modal-header {
-	background: #37BC9B;
+	background: #ED5565;
 }
 
 .modal-title {
@@ -780,10 +780,19 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .sidebar-toggle-box .fa-bars {
     cursor: pointer;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     color: #ffffff;
+    margin-top: -5px;
 }
 
+.sidebar-toggle-box .fa-caret-square-o-right {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    color: #ffffff;
+    float: left;
+    margin-top: -5px;
+}
 
 .sidebar-closed > #sidebar > ul {
     display: none;
@@ -2230,21 +2239,30 @@ hr {
 /* CSS untuk ukuran table */
 #colNomer{
     width: 5%;
+    text-align: center;
 }
 
 #colHP{
     width: 20%;
+    text-align: center;
 }
 
 #colPesan{
     width: 40%;
+    text-align: center;
 }
 
 #colTanggal{
     width: 10%;
+    text-align: center;
 }
 
 #colAksi{
     width: 7%;
+    text-align: center;
+}
+
+#colIsi{
+    text-align: center;
 }
 
