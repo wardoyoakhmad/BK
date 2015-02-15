@@ -49,7 +49,7 @@
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="home">
                     
-<<<<<<< HEAD
+
 
 
                     <form class="form-horizontal" method="get" id="formPesan">
@@ -195,7 +195,6 @@
     </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
-=======
 
 
                     <form class="form-horizontal" method="get" id="formPesan">
@@ -378,5 +377,5 @@
     </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
      
