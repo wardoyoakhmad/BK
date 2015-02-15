@@ -21,10 +21,35 @@
 			$data = $this->db->query($sql);
 			$index = 1;
 			foreach ($data->result() as $row) {
+<<<<<<< HEAD
 				$dataKelas[$index] = array('id_tahun_ajaran' => $row->id_tahun_ajaran , 'nama_semester' => $row->nama_semester );
 				$index++;
 			}
 			return $dataKelas;
+=======
+				$dataSemester[$index] = array('id_tahun_ajaran' =>$row->id_tahun_ajaran,
+								'awal_semester' =>$row->awal_semester ,
+								'akhir_semester'=> $row->akhir_semester,
+								'tahun_ajaran'=>$row->tahun_ajaran,
+								'jenis'=>$row->jenis,
+								'nama_semester'=>$row->nama_semester );
+				$index++;
+			}
+			return $dataSemester;
+		}
+
+
+		function input_kelas($kelas,$nis,$tahun)
+		{
+			$sql = "INSERT INTO kelas_siswa(nis,id_kelas,id_tahun_ajaran) VALUES ('$nis','$kelas','$tahun')";
+			// print_r($sql);
+			$this->db->query($sql);
+		}
+
+		public function tambah_semester($dataSemester)
+		{
+			$this->db->insert('tahunajaran', $dataSemester);
+>>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
 		}
 	
 	}

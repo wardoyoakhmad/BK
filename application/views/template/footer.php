@@ -28,14 +28,23 @@
     <script type="text/javascript" src="<?= base_url().'asset/js/jquery.gritter.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/gritter-conf.js';?>"></script>
 
+
     <!--script for this page-->
     <script src="<?= base_url().'asset/js/owl.carousel.js';?>"></script>  
     <script src="<?= base_url().'asset/js/sparkline-chart.js';?>"></script>    
 	<script src="<?= base_url().'asset/js/zabuto_calendar.js';?>"></script>	
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.paginate.js';?>"></script>
-	<script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
+    <script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.filter.js';?>"></script>
+
+    <script src="<?= base_url().'asset/js/bootstrap-datepicker.js';?>"></script>
+
+
+    <!-- datepicker -->
+    <script type="text/javascript">
+    $(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });
+    </script>    
 
     <!-- Ini JS buat toggle menu -->
     <script type="text/javascript">
@@ -57,7 +66,7 @@
     $(function () {
         $('.footable').footable();
     });
-    </script> 	
+    </script>   
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -115,21 +124,32 @@
         }
     </script>
 
+<<<<<<< HEAD
+=======
+    <!-- Ini Slide Modal Edit -->
+    <script type="text/javascript">
+        $('#modalEdit').on('shown.bs.modal', function () {
+        $('#recipient-name').focus()
+        })
+    </script>   
+
+    <!-- button scroll top -->
+>>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
     <script type="text/javascript">
     $(document).ready(function(){
     
     //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
-            $('.go-top').fadeIn();
+            $('.go-top').fadeIn('slow');
         } else {
-            $('.go-top').fadeOut();
+            $('.go-top').fadeOut('slow');
         }
     });
     
     //Click event to scroll to top
     $('.go-top').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
+        $('html, body').animate({scrollTop : 0}, 1000);
         return false;
     });
     
