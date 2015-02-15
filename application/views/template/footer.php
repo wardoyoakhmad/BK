@@ -124,8 +124,7 @@
         }
     </script>
 
-<<<<<<< HEAD
-=======
+
     <!-- Ini Slide Modal Edit -->
     <script type="text/javascript">
         $('#modalEdit').on('shown.bs.modal', function () {
@@ -134,7 +133,6 @@
     </script>   
 
     <!-- button scroll top -->
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
     <script type="text/javascript">
     $(document).ready(function(){
     
