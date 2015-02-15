@@ -2,7 +2,7 @@
       <footer class="site-footer">
           <div class="text-center">
               copyright <i class="fa fa-copyright"></i> 2015. blackomsi
-              <a href="index.html#" class="go-top">
+              <a href="#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -13,6 +13,7 @@
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="<?= base_url().'asset/js/jquery.js';?>"></script>
     <script src="<?= base_url().'asset/js/jquery-1.11.2.min.js';?>"></script>
+    <script src="<?= base_url().'asset/js/jqueryvalidate.js';?>"></script>
     <script src="<?= base_url().'asset/js/bootstrap.min.js';?>"></script>
     <script class="include" type="text/javascript" src="<?= base_url().'asset/js/jquery.dcjqaccordion.2.7.js';?>"></script>
     <script src="<?= base_url().'asset/js/jquery.scrollTo.min.js';?>"></script>
@@ -27,20 +28,45 @@
     <script type="text/javascript" src="<?= base_url().'asset/js/jquery.gritter.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/gritter-conf.js';?>"></script>
 
+
     <!--script for this page-->
     <script src="<?= base_url().'asset/js/owl.carousel.js';?>"></script>  
     <script src="<?= base_url().'asset/js/sparkline-chart.js';?>"></script>    
 	<script src="<?= base_url().'asset/js/zabuto_calendar.js';?>"></script>	
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.paginate.js';?>"></script>
-	<script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
+    <script type="text/javascript" src="<?= base_url().'asset/js/footable.sort.js';?>"></script>
     <script type="text/javascript" src="<?= base_url().'asset/js/footable.filter.js';?>"></script>
+
+    <script src="<?= base_url().'asset/js/bootstrap-datepicker.js';?>"></script>
+
+
+    <!-- datepicker -->
+    <script type="text/javascript">
+    $(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });
+    </script>    
+
+    <!-- Ini JS buat toggle menu -->
+    <script type="text/javascript">
+      $('.sidebar-toggle-box').click(function(){
+      // toggle icon
+      $(this).find("#SlideBar").toggleClass("fa fa-bars fa fa-arrow-right fa-3x");
+    });
+    </script>
+
+    <!-- Ini JS buat hide icon menu -->
+    <script type="text/javascript">
+      $('.sub-menu').click(function(){
+      // toggle icon
+      $(this).find("#panah").toggleClass("fa fa-chevron-right fa fa-chevron-down");
+    });
+    </script>
 
     <script type="text/javascript">
     $(function () {
         $('.footable').footable();
     });
-    </script> 	
+    </script>   
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -98,27 +124,36 @@
         }
     </script>
 
+
+    <!-- Ini Slide Modal Edit -->
+    <script type="text/javascript">
+        $('#modalEdit').on('shown.bs.modal', function () {
+        $('#recipient-name').focus()
+        })
+    </script>   
+
+    <!-- button scroll top -->
     <script type="text/javascript">
     $(document).ready(function(){
     
     //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
-            $('.go-top').fadeIn();
+            $('.go-top').fadeIn('slow');
         } else {
-            $('.go-top').fadeOut();
+            $('.go-top').fadeOut('slow');
         }
     });
     
     //Click event to scroll to top
     $('.go-top').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
+        $('html, body').animate({scrollTop : 0}, 1000);
         return false;
     });
     
 });
  
-    </script>  
+    </script>
 
     <script type="text/javascript">
         <script type="text/javascript">

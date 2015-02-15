@@ -26,18 +26,67 @@ class Page extends CI_Controller{
 
     public function rekap()
     {
+
+        $breadcrumb = array(
+                "Beranda" => "index",
+                "Data" => "rekap",
+                "Rekap Data" => ""
+                );
+        $data['breadcrumb'] = $breadcrumb;
+
         $this->load->view('template/header');
         $this->load->view('template/panel');
         $this->load->view('rekap');
         $this->load->view('template/footer');
     }
 
+    public function import()
+    {
+        $akun = $this->session->userdata('akun');
+        if ($akun['login'] == FALSE) {
+            redirect(base_url().'page/index');
+        }
+        else {
+
+            $this->load->model('siswa_model', 'siswa');
+            $data['data'] = $this->siswa->tampil();
+            $breadcrumb = array(
+                "Beranda" => "index",
+                "Import Data Siswa Baru" => ""
+                );
+            $data['breadcrumb'] = $breadcrumb;
+            $this->load->view('template/header');
+            $this->load->view('template/panel');
+            $this->load->view('import',$data);
+            $this->load->view('template/footer');
+        }
+    }
+
     public function edit()
     {
-        $this->load->view('template/header');
-        $this->load->view('template/panel');
-        $this->load->view('edit');
-        $this->load->view('template/footer');
+        $akun = $this->session->userdata('akun');
+        if ($akun['login'] == FALSE) {
+            redirect(base_url().'page/index');
+        }
+        else {
+
+            $breadcrumb = array(
+                "Beranda" => "index",
+                "Data" => "edit",
+                "Input Data Siswa" => ""
+                );
+            $data['breadcrumb'] = $breadcrumb;
+
+            $this->load->model('siswa_model', 'siswa');
+            $data['siswa'] = $this->siswa->tampilSiswa();
+            $this->load->model('kelas_model','kelas');
+            $data['kelas'] = $this->kelas->tampil();
+            $data['semester'] = $this->kelas->tampilSemester();
+            $this->load->view('template/header');
+            $this->load->view('template/panel');
+            $this->load->view('edit', $data);
+            $this->load->view('template/footer');
+        }
     }
 
     public function data()
@@ -52,7 +101,11 @@ class Page extends CI_Controller{
             $breadcrumb = array(
                 "Beranda" => "index",
                 "Data" => "data",         
+
                 "Rekap Data" => ""
+
+                "Data Siswa" => ""
+
                 );
             $data['breadcrumb'] = $breadcrumb;
             $this->load->view('template/header');
@@ -72,6 +125,73 @@ class Page extends CI_Controller{
         else{
             $this->load->view('login');
         }
+
+    }
+
+    public function absen()
+    {
+        $akun = $this->session->userdata('akun');
+        if ($akun['login'] == FALSE) {
+            redirect(base_url().'page/index');
+        }
+        else {
+            $this->load->model('siswa_model', 'siswa');
+            $data['data'] = $this->siswa->tampil();
+            $breadcrumb = array(
+                "Beranda" => "index",
+                 "Data" => "absen",
+                "Absensi" => "absen"
+                );
+            $this->load->view('template/header');
+            $this->load->view('template/panel');
+            $this->load->view('absen',$data);
+            $this->load->view('template/footer');
+        }
+    }
+
+    public function semester()
+    {
+        $akun = $this->session->userdata('akun');
+        if ($akun['login'] == FALSE) {
+            redirect(base_url().'page/index');
+        }
+        else {
+            $breadcrumb = array(
+                "Beranda" => "index",
+                "Data" => "semester",         
+                "Tambah Semester" => ""
+                );
+            $data['breadcrumb'] = $breadcrumb;
+            $this->load->model('kelas_model','kelas');
+            $data['semester'] = $this->kelas->tampilSemester();
+            $this->load->view('template/header');
+            $this->load->view('template/panel');
+            $this->load->view('tambah_semester',$data);
+            $this->load->view('template/footer');
+        }
+    }
+
+    public function import()
+    {
+        $akun = $this->session->userdata('akun');
+        if ($akun['login'] == FALSE) {
+            redirect(base_url().'page/index');
+        }
+        else {
+            $this->load->model('kelas_model', 'kelas');
+            $data['data'] = $this->kelas->tampil();
+            $breadcrumb = array(
+                "Beranda" => "index",
+                "Data" => "import",
+                "Import Data Siswa" => ""
+                );
+            $data['breadcrumb'] = $breadcrumb;
+            $this->load->view('template/header');
+            $this->load->view('template/panel');
+            $this->load->view('import',$data);
+            $this->load->view('template/footer');
+        }
+
     }
 }
 
