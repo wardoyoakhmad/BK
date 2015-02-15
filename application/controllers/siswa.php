@@ -7,10 +7,9 @@ class Siswa extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('siswa_model','siswa');
-<<<<<<< HEAD
-=======
+
 		$this->load->model('kelas_model','kelas');
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
 	}
 
 	public function input_kelas()
@@ -23,17 +22,16 @@ class Siswa extends CI_Controller {
         	$i++;
         }
         for ($j=0; $j < $i ; $j++) { 
-<<<<<<< HEAD
+
         	$this->siswa->input_kelas($kelas,$nis[$j],$semester);	
-=======
+
         	$this->kelas->input_kelas($kelas,$nis[$j],$semester);	
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
         }
         
 	}
 
-<<<<<<< HEAD
-=======
+
 	public function tambah_semester()
 	{
 		$awal_semester = $this->input->post('awal_semester');
@@ -59,7 +57,7 @@ class Siswa extends CI_Controller {
 
 	}
 
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
 }
 
 /* End of file siswa.php */
