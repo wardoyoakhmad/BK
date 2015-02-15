@@ -26,15 +26,14 @@ class Page extends CI_Controller{
 
     public function rekap()
     {
-<<<<<<< HEAD
-=======
+
         $breadcrumb = array(
                 "Beranda" => "index",
                 "Data" => "rekap",
                 "Rekap Data" => ""
                 );
         $data['breadcrumb'] = $breadcrumb;
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
         $this->load->view('template/header');
         $this->load->view('template/panel');
         $this->load->view('rekap');
@@ -48,7 +47,7 @@ class Page extends CI_Controller{
             redirect(base_url().'page/index');
         }
         else {
-<<<<<<< HEAD
+
             $this->load->model('siswa_model', 'siswa');
             $data['data'] = $this->siswa->tampil();
             $breadcrumb = array(
@@ -70,14 +69,14 @@ class Page extends CI_Controller{
             redirect(base_url().'page/index');
         }
         else {
-=======
+
             $breadcrumb = array(
                 "Beranda" => "index",
                 "Data" => "edit",
                 "Input Data Siswa" => ""
                 );
             $data['breadcrumb'] = $breadcrumb;
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
             $this->load->model('siswa_model', 'siswa');
             $data['siswa'] = $this->siswa->tampilSiswa();
             $this->load->model('kelas_model','kelas');
@@ -102,11 +101,11 @@ class Page extends CI_Controller{
             $breadcrumb = array(
                 "Beranda" => "index",
                 "Data" => "data",         
-<<<<<<< HEAD
+
                 "Rekap Data" => ""
-=======
+
                 "Data Siswa" => ""
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
                 );
             $data['breadcrumb'] = $breadcrumb;
             $this->load->view('template/header');
@@ -126,8 +125,7 @@ class Page extends CI_Controller{
         else{
             $this->load->view('login');
         }
-<<<<<<< HEAD
-=======
+
     }
 
     public function absen()
@@ -193,7 +191,7 @@ class Page extends CI_Controller{
             $this->load->view('import',$data);
             $this->load->view('template/footer');
         }
->>>>>>> 4eb7f4c286601333acca784b360ffd11d3e58801
+
     }
 }
 
